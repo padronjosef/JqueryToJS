@@ -3,16 +3,16 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-
 /*home layout*/
 .home {
   display: grid;
   height: 100vh;
   grid-template-columns: 350px 1fr;
   grid-template-rows: 1fr 0;
-  grid-template-areas: "sidebar primary"
-                       "sidebar featuring";
+  grid-template-areas:  "sidebar primary"
+                        "sidebar featuring";
 }
+
 .home.search-active {
   grid-template-rows: 1fr 150px;
 }
@@ -20,13 +20,16 @@ body {
 .home-sidebar {
   grid-area: sidebar;
 }
+
 .home-primary {
   grid-area: primary;
 }
+
 .home-featuring {
   grid-area: featuring;
   display: grid;
 }
+
 .home-featuring img {
   align-self: center;
   justify-self: center;
@@ -47,11 +50,12 @@ body {
 
 /*Logo*/
 .logo {
-
 }
+
 .logo-image {
   margin: 0;
 }
+
 .logo-image img {
   max-width: 100%;
 }
@@ -61,7 +65,6 @@ body {
 }
 
 /*myPlaylist*/
-
 .myPlaylist {
   padding: 0 20px;
 }
@@ -73,17 +76,16 @@ body {
   display: block;
   margin-bottom: 7px;
 }
+
 .myPlaylist-item:last-child a {
   margin-bottom: 0;
 }
-
 
 .myPlaylist-item a:hover {
   text-decoration: underline;
 }
 
 /*playlistFriends*/
-
 .playlistFriends {
   padding: 0;
 }
@@ -97,12 +99,14 @@ body {
   margin-bottom: 7px;
   font-size: .8em;
 }
+
 .playlistFriends-item a {
   display: inline-flex;
   align-items: center;
   color: white;
   text-decoration: none;
 }
+
 .playlistFriends-item:hover a {
   text-decoration: underline;
 }
@@ -118,17 +122,15 @@ body {
   display: inline-block;
 }
 
-
 .home-primary {
   display: grid;
-  grid-template-areas: "search user"
-                       "list list";
+  grid-template-areas:  "search user"
+                        "list list";
   grid-template-rows: auto 1fr;
   grid-template-columns: 300px 1fr;
   padding: 10px;
   overflow: auto;
 }
-
 
 .search {
   grid-area: search;
@@ -145,6 +147,7 @@ body {
   box-shadow: 0 0 10px #f0f0f0;
   box-sizing: border-box;;
 }
+
 .primary-search {
   align-self: center;
 }
@@ -160,6 +163,7 @@ body {
   font-weight: 300;
   margin: 0;
 }
+
 .user img {
   width: 45px;
   height: 45px;
@@ -173,18 +177,21 @@ body {
   overflow: auto;
   width: fit-content;
 }
+
 .primaryPlaylist-topic {
   margin: 15px 0 0;
   color: #888B8E;
   font-size: 14px;
   font-weight: 300;
 }
+
 .primaryPlaylist-title {
   margin: 0 0 15px;
   color: #3F546C;
   font-size: 20px;
   font-weight: 400;
 }
+
 .primaryPlaylist-list {
   display: flex;
   overflow: auto;
@@ -202,10 +209,11 @@ body {
   /* border: 1px solid blue; */
   width: 170px;
 }
+
 /*.primaryPlaylistItem:hover {
   transform: scale(1.1)
-}
-*/
+}*/
+
 .primaryPlaylistItem-image {
 }
 
@@ -214,13 +222,13 @@ body {
   height: 256px;
   object-fit: cover;
 }
+
 .primaryPlaylistItem-title {
   margin: 5px 0;
   color: #44546B;
   font-size: 14px;
   font-weight: normal;
 }
-
 
 .featuring {
   background: linear-gradient(to right, #ff0000, #ff458b);
@@ -238,14 +246,14 @@ body {
 .featuring-title {
   margin: 10px;
 }
+
 .featuring-album {
   font-size: 1.3em;
   margin: 10px;
 }
 
-
 .fadeIn {
-  animation: 1000ms fadeIn;
+  animation: 5000ms fadeIn;
 }
 
 @keyframes fadeIn {

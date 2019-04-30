@@ -12,9 +12,11 @@
   transition: .2s;
   will-change: transform;
 }
+
 .modal-btn.primary {
   background: #7dc800;
 }
+
 .modal-btn.warning {
   background: #ff463b;
 }
@@ -22,6 +24,7 @@
 .modal-btn:active {
   transform: scale(.9);
 }
+
 .overlay {
   background: rgba(0,0,0,.5);
   position: fixed;
@@ -37,13 +40,14 @@
   /*visibility: hidden;*/
   display: none;
 }
+
 .overlay.active {
   /*opacity: 1;*/
   /*visibility: visible;*/
   display: flex;
 }
-.modal {
 
+.modal {
   width: 500px;
   background: white;
   padding: 2em;
@@ -77,6 +81,7 @@
 .modal-content p {
   align-self: center;
 }
+
 /*@keyframes animationIn {*/
 @keyframes modalIn {
   0% {
